@@ -1,25 +1,16 @@
 package edu.fiuba.algo3;
 
-        import javafx.application.Application;
-
-        import javafx.geometry.Insets;
-        import javafx.geometry.Pos;
-        import javafx.scene.Parent;
-        import javafx.scene.Scene;
-        import javafx.scene.control.ComboBox;
-        import javafx.scene.layout.*;
-        import javafx.scene.shape.Box;
-        import javafx.scene.text.*;
-        import javafx.event.EventHandler;
-        import javafx.scene.control.TextField;
-        import javafx.scene.control.Button;
-        import javafx.scene.paint.Color;
-        import javafx.scene.shape.Rectangle;
-        import javafx.stage.Stage;
-
-        import java.util.Stack;
-
-        import static javafx.scene.layout.BorderStroke.*;
+import javafx.application.Application;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 
 public class Main extends Application {
@@ -54,7 +45,7 @@ public class Main extends Application {
 
         nameBox.setStyle("-fx-border-style: solid inside;"
                 + "-fx-border-width: 2;" + "-fx-border-insets: 5;"
-                + "-fx-border-radius: 5;" + "-fx-border-color: blue;");
+                + "-fx-border-radius: 5;" + "-fx-border-color: darkred;");
 
         Text information = new Text();
 
@@ -65,7 +56,7 @@ public class Main extends Application {
 
         dataBox.setStyle("-fx-border-style: solid inside;"
                 + "-fx-border-width: 2;" + "-fx-border-insets: 5;"
-                + "-fx-border-radius: 5;" + "-fx-border-color: blue;");
+                + "-fx-border-radius: 5;" + "-fx-border-color: darkred;");
 
         dataBox.setAlignment(Pos.CENTER);
 
@@ -129,7 +120,7 @@ public class Main extends Application {
 
         dataTurn.setStyle("-fx-border-style: solid inside;"
                 + "-fx-border-width: 2;" + "-fx-border-insets: 5;"
-                + "-fx-border-radius: 5;" + "-fx-border-color: red;");
+                + "-fx-border-radius: 5;" + "-fx-border-color: darkred;");
 
 
         HBox map = new HBox();
@@ -138,6 +129,9 @@ public class Main extends Application {
                 + "-fx-border-width: 2;" + "-fx-border-insets: 5;"
                 + "-fx-border-radius: 5;" + "-fx-border-color: red;");
 
+       //ImageView mapImage = new ImageView("archivos/tableroTeg.png");
+
+        //map.getChildren().add(mapImage);
         Text mapText = new Text();
         mapText.setText("* MAPA *");
         mapText.setFont(font);
